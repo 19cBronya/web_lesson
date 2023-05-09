@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: 12px;
+            font-family: "宋体";
+            color: #515151;     
+        }
+        .form-wrapper{
+            width: 660px;
+            height: 600px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 50px auto;
+        }
+        h2{
+            font-size: 22px;
+            color: #0B0B0B;
+            padding: 0 0 20px 0;
+        }
+        h2 span{
+            font-size: 12px;
+        }
+        .required{
+            color: red;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .input{
+            border: 1px solid #ccc;
+            padding: 3px 26px;
+            font-size: 12px;
+            color: #949494;
+            border-radius: 5px;
+        }
+        .mobile{
+            background: url("img/phone.png") no-repeat;
+        }
+        .username{
+            background: url("img/name.png")  no-repeat;
+        }
+        .email{
+            height: 122px;
+            background: url("img/email.png")no-repeat;
+        }
+        td{
+            padding: 0 0 26px 0;
+        }
+        textarea{
+            height: 164px;
+            width: 432px;
+            color: #949494;
+            padding: 3px;
+        }
+        .message{
+            display: flex;
+        }
+        .info{
+            font-size: 12px;
+        }
+        .label{
+            width: 78px;
+            text-align: right;
+            line-height: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+        <h2>下面就开始报名吧<span>(以下信息是报名时的重要依据,请认真填写)</span></h2>
+        <form>
+            <table>
+                <tr>
+                    <td class="label">
+                        <span class="info">姓名<span class="required">*</span></span> 
+                    </td>
+                    <td>
+                        <input class="input mobile" type="text" name="username" placeholder="报名时的重要依据,请认真填写">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <span class="info">手机<span class="required">*</span></span>
+                    </td>
+                    <td>
+                        <input class="input username" type="text" name="phone" placeholder="报名时的重要依据,请认真填写">
+                    </td>
+                </tr>
+               <!-- 其他表格内容 -->
+            </table>
+            <button class="button" type="submit">提交</button>
+        </form>
+    </div>
+</body>
+</html>
