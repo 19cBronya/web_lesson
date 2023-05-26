@@ -7,13 +7,19 @@
     <title>欢迎来到Asoul-wiki - 一个魂的百科全书!</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
+
+
 <body>
     <div class="header">
         <h1 style="text-align:left;">
             <a href="index.html">A-SOUL wiki</a>
         </h1>
         <h4 style="text-align:left">      一个魂的百科全书!</h4>
+        
     </div>
+
     <center><table class="menu">
         <tr>
             <td>
@@ -46,5 +52,20 @@
         <div>
         </div>
     </div>
+    <img id="a" src="https://codeforc.es/menci-orgroot/s/46224/images/codeforces-sponsored-by-ton.png" onmouseover="addShadow()" onmouseout="removeShadow()" />
 </body>
+
+
+<script>
+function addShadow() {
+  var img = document.getElementById("a");
+  img.style.boxShadow = "5px 5px 5px rgba(0, 0, 0, 0.5)";
+}
+
+function removeShadow() {
+  var img = document.getElementById("a");
+  img.style.boxShadow = "none";
+}
+</script> 
+
 </html>
