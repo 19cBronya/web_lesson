@@ -8,8 +8,14 @@
     <title>欢迎来到Asoul-wiki - 一个魂的百科全书！</title>
 
     <style>
+        div.head{
+            background-image: url(imgs/as4all_top.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
         table.menu {
-            /* background-color: rgba(145, 145, 145, 0.5) */
+            /* background-color: rgba(245, 245, 245, 0.5) */
             /* background-color: rgba(0,255,255,0.8); */
         }
 
@@ -29,39 +35,31 @@
             vertical-align: baseline;
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: .5rem;
-            width: 300px;
+            width:20vw;
+            /* width: 300px; */
         }
+        div.card_cir_showcir{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 6px; 
+            background-color:rgba(192, 192, 192,0.3)
+        }
+
     </style>
 
 </head>
 
 <body>
 
-    <div id="header" style="background-image: url(imgs/as4all_top.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    ">
+    <div id="header" class="head">
         <div >
             <div class="header">
                 <h1 style="text-align:left ; ">
                     <a href="index.html">A-SOUL wiki</a>
                 </h1>
             </div>
-            <div>
-                <blockquote style="
-                float: right;
-                text-align: right;
-             background-color:rgba(255, 255, 255, 0.1);
-             border-right-style: groove;border-left-color:
-              black;border-right-width: 6px;
-              width: 25%;
-              ">
-                    <h4 style="text-align:right">一个魂的百科全书!</h4>
-                </blockquote>
-            </div>
         </div>
-        <div style="background-color: rgba(245, 245, 245, 0.1)">
+        <br>
+        <div style="background-color: rgba(245, 245, 245, 0.5)">
             <center>
                 <table class="menu">
                     <tr>
@@ -89,25 +87,42 @@
                 </table>
             </center>
         </div>
+ 
     </div>
-    <div class="content">
-        <div>
+    <div id="main_inner">    
+           <div  style="height: 5px;width: 100%;">
+                <!-- 站位 -->
+            </div>
+        <div id="left_card"style="float:left;width:12%;height: 1px;">
+            <!-- 站位 -->
         </div>
-        <div>
+        <div id="mid_card" class="card_cir_showcir" 
+            style="float:left;width:76%;height: 1000px;">
+            <center>hello  </center> 
         </div>
-        <div>
+        <div id="right_card" style="float:left; width:12%;height: 1px;">
+            <!-- 站位 -->
+        </div>
+        <div  style="height: 12px;width: 100%;float: right;">
+            <!-- 站位 -->
         </div>
     </div>
-    <ul class="margin-left-set" style="margin-left: 1.2em;">
-        <li>“水母”首次出现于2021年1月21日贝拉突击检查时，向晚的一个“烂活”。<sup id="cite_ref-1" class="reference"><a
-                    href="#cite_note-1">[1]</a></sup></li>
-    </ul>
+    <div id="footer">
+        <hr style="width: 90%; margin: 0 auto; color: black; size: 2px;">
+    </div>
+
+    <!-- 以下为实验 -->
+  
     <blockquote class="toccolours"
         style="border-left-style:solid;border-left-width:8px;display:table;border-left-color: aqua; float:none;background-color: bisque;">
         <div style="padding: 10px 15px 10px 15px;">就是，给大家学一个内个就是,“水母”。<br>给大家模仿一下水母，这是我最近学的绝活<cite
                 style="display: block; text-align: right;"> — 向晚，2021年1月21日</cite></div>
     </blockquote>
-
+    <!-- 以上为实验 -->
 </body>
+<script>
+
+
+</script>
 
 </html>
