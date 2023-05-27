@@ -13,6 +13,7 @@
             background-size:cover;
             background-repeat: no-repeat;
             background-position: center;
+            /* height: 140px; */
         }
         table.menu {
             /* background-color: rgba(245, 245, 245, 0.5) */
@@ -44,6 +45,16 @@
             background-color:rgba(192, 192, 192,0.3)
         }
 
+        div.header{
+            
+        }
+
+        a.title{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:antiquewhite;
+            text-decoration: none;
+            text-align:left;
+        }
     </style>
 
 </head>
@@ -51,14 +62,12 @@
 <body>
 
     <div id="header" class="head">
-        <div >
-            <div class="header">
-                <h1 style="text-align:left ; ">
-                    <a href="index.html">A-SOUL wiki</a>
+
+        <div class="header">
+                <h1>
+                   <a class="title" href="index.html">A-SOUL wiki</a>
                 </h1>
-            </div>
         </div>
-        <br>
         <div style="background-color: rgba(245, 245, 245, 0.5)">
             <center>
                 <table class="menu">
@@ -90,17 +99,63 @@
  
     </div>
     <div id="main_inner">    
-           <div  style="height: 5px;width: 100%;">
-                <!-- 站位 -->
-            </div>
-        <div id="left_card"style="float:left;width:12%;height: 1px;">
+        <div  style="height: 5px;width: 100%;">
+               <!-- 站位 -->
+        </div>
+        <div id="left_card"style="float:left;width:15%;height: 1px;">
             <!-- 站位 -->
         </div>
         <div id="mid_card" class="card_cir_showcir" 
-            style="float:left;width:76%;height: 1000px;">
-            <center>hello  </center> 
+            style="float:left;width:70%;">
+            <!-- main_box -->
+            <div style="height: 10px;"><!--站位--></div>
+            <div id="inner_left_card" style="float:left;width:5%;height: 1px;">
+                <!-- 站位 -->
+            </div>
+            <div id="inner_left_card" style="float:left;width:90%;">
+                <!-- mian_inner_box -->
+                <div>
+                    <img src="imgs/port.jpg" style="width: 100%; float: left;border-radius:50px">
+                    <div style="width: 15% ;float:left;">
+                        <div style="float: left;">
+                        </div>
+                        <div style="float: left;">
+                            <img alt="Diana" src="imgs/we_r_diana.png" style="width: 95%;"><br>
+                            <img alt="AvA" src="imgs/we_r_ava.png" style="width: 95%;"><br>
+                        </div>
+                        
+                    </div>
+                    <div style="width: 70%;float: left;">
+                        <br>
+                        A-SOUL wiki 是由粉丝自行组织的虚拟女团A-SOUL信息站，
+                        本站主要维护<A-SOUL>的有关信息，为粉丝和路人提供最新最全的信息。<br>
+                        <div>
+                            <h3>index 主页</h3>
+                            本界面为站点主页，展示的是A-Soul的最重要的信息，你也可以在本界面前往其他页面
+
+                            <h3>calendar 日程表</h3>
+                            本界面展示本周A-Soul成员演出的安排，用户可以通过点击对应成员头像的方式筛选只看某位成员的日程安排
+
+                            <h3>events A-Soul大事记</h3>
+                            本界面记录A-Soul过去、当下和已经预告的将来的重大事项
+
+                            <h3>introduction 简介</h3>   
+                            提供A-Soul的简介信息和成员简介
+                        </div>
+                    </div>
+                    <div style="width: 15%;float: right;">
+                        <img alt="Bella" src="imgs/we_r_bella.png" style="width: 95%;"><br>
+                        <img alt="Eileen" src="imgs/we_r_eileen.png" style="width: 95%;">
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="inner_left_card" style="float:left;width:5%;height: 1px;">
+                <!-- 站位 -->
+            </div>
+            <div style="height:10px;width: 100%;float: right;"></div>
         </div>
-        <div id="right_card" style="float:left; width:12%;height: 1px;">
+        <div id="right_card" style="float:left; width:15%;height: 1px;">
             <!-- 站位 -->
         </div>
         <div  style="height: 12px;width: 100%;float: right;">
@@ -110,14 +165,17 @@
     <div id="footer">
         <hr style="width: 90%; margin: 0 auto; color: black; size: 2px;">
     </div>
-
+    <div id="footer" style="text-align: center;">
+        本站点由AS粉丝自发维护，并且部署于<a href="https://github.com/xiangwanavava/web_lesson/tree/master/ASwiki">GitHub </a><br>
+        使用信息收集于互联网，如有侵权请联系管理员，我们将第一时间删除并致歉 <br>
+    </div>
     <!-- 以下为实验 -->
   
-    <blockquote class="toccolours"
+    <!-- <blockquote class="toccolours"
         style="border-left-style:solid;border-left-width:8px;display:table;border-left-color: aqua; float:none;background-color: bisque;">
         <div style="padding: 10px 15px 10px 15px;">就是，给大家学一个内个就是,“水母”。<br>给大家模仿一下水母，这是我最近学的绝活<cite
                 style="display: block; text-align: right;"> — 向晚，2021年1月21日</cite></div>
-    </blockquote>
+    </blockquote> -->
     <!-- 以上为实验 -->
 </body>
 <script>
