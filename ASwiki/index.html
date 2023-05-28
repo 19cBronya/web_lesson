@@ -8,13 +8,13 @@
     <title>欢迎来到Asoul-wiki - 一个魂的百科全书！</title>
 
     <style>
-        div.head{
+        div.head {
             background-image: url(imgs/as4all_top.png);
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            /* height: 140px; */
         }
+
         table.menu {
             /* background-color: rgba(245, 245, 245, 0.5) */
             /* background-color: rgba(0,255,255,0.8); */
@@ -36,24 +36,67 @@
             vertical-align: baseline;
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: .5rem;
-            width:20vw;
+            width: 20vw;
             /* width: 300px; */
         }
-        div.card_cir_showcir{
+
+        div.card_cir_showcir {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            border-radius: 6px; 
-            background-color:rgba(192, 192, 192,0.3)
+            border-radius: 6px;
+            background-color: rgba(192, 192, 192, 0.3)
         }
 
-        div.header{
-            
-        }
+        div.header {}
 
-        a.title{
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            color:antiquewhite;
+        a.title {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: antiquewhite;
             text-decoration: none;
-            text-align:left;
+            text-align: left;
+        }
+
+        img.index_top_pic {
+            width: 100%;
+            float: left;
+            border-radius: 50px;
+        }
+
+        .slider {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.2);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 20px;
         }
     </style>
 
@@ -64,9 +107,9 @@
     <div id="header" class="head">
 
         <div class="header">
-                <h1>
-                   <a class="title" href="index.html">A-SOUL wiki</a>
-                </h1>
+            <h1>
+                <a class="title" href="index.html">A-SOUL wiki</a>
+            </h1>
         </div>
         <div style="background-color: rgba(245, 245, 245, 0.5)">
             <center>
@@ -96,17 +139,16 @@
                 </table>
             </center>
         </div>
- 
+
     </div>
-    <div id="main_inner">    
-        <div  style="height: 5px;width: 100%;">
-               <!-- 站位 -->
-        </div>
-        <div id="left_card"style="float:left;width:15%;height: 1px;">
+    <div id="main_inner">
+        <div style="height: 5px;width: 100%;">
             <!-- 站位 -->
         </div>
-        <div id="mid_card" class="card_cir_showcir" 
-            style="float:left;width:70%;">
+        <div id="left_card" style="float:left;width:15%;height: 1px;">
+            <!-- 站位 -->
+        </div>
+        <div id="mid_card" class="card_cir_showcir" style="float:left;width:70%;">
             <!-- main_box -->
             <div style="height: 10px;"><!--站位--></div>
             <div id="inner_left_card" style="float:left;width:5%;height: 1px;">
@@ -115,7 +157,15 @@
             <div id="inner_left_card" style="float:left;width:90%;">
                 <!-- mian_inner_box -->
                 <div>
-                    <img src="imgs/port.jpg" style="width: 100%; float: left;border-radius:50px">
+                    <div class="slider">
+                        <img src="imgs/ava_top.png" alt="">
+                        <img src="imgs/beela_top.png" alt="">
+                        <img src="imgs/diana_top.png" alt="">
+                        <img src="imgs/eileen_top.png" alt="">
+
+                        <button class="prev"><<</button>
+                        <button class="next">>></button>
+                    </div>
                     <div style="width: 15% ;float:left;">
                         <div style="float: left;">
                         </div>
@@ -123,31 +173,31 @@
                             <img alt="Diana" src="imgs/we_r_diana.png" style="width: 95%;"><br>
                             <img alt="AvA" src="imgs/we_r_ava.png" style="width: 95%;"><br>
                         </div>
-                        
+
                     </div>
                     <div style="width: 70%;float: left;">
                         <br>
                         A-SOUL wiki 是由粉丝自行组织的虚拟女团A-SOUL信息站，
                         本站主要维护<A-SOUL>的有关信息，为粉丝和路人提供最新最全的信息。<br>
-                        <div>
-                            <h3>index 主页</h3>
-                            本界面为站点主页，展示的是A-Soul的最重要的信息，你也可以在本界面前往其他页面
+                            <div>
+                                <h3>index 主页</h3>
+                                本界面为站点主页，展示的是A-Soul的最重要的信息，你也可以在本界面前往其他页面
 
-                            <h3>calendar 日程表</h3>
-                            本界面展示本周A-Soul成员演出的安排，用户可以通过点击对应成员头像的方式筛选只看某位成员的日程安排
+                                <h3>calendar 日程表</h3>
+                                本界面展示本周A-Soul成员演出的安排，用户可以通过点击对应成员头像的方式筛选只看某位成员的日程安排
 
-                            <h3>events A-Soul大事记</h3>
-                            本界面记录A-Soul过去、当下和已经预告的将来的重大事项
+                                <h3>events A-Soul大事记</h3>
+                                本界面记录A-Soul过去、当下和已经预告的将来的重大事项
 
-                            <h3>introduction 简介</h3>   
-                            提供A-Soul的简介信息和成员简介
-                        </div>
+                                <h3>introduction 简介</h3>
+                                提供A-Soul的简介信息和成员简介
+                            </div>
                     </div>
                     <div style="width: 15%;float: right;">
                         <img alt="Bella" src="imgs/we_r_bella.png" style="width: 95%;"><br>
                         <img alt="Eileen" src="imgs/we_r_eileen.png" style="width: 95%;">
                     </div>
-                    
+
                 </div>
             </div>
             <div id="inner_left_card" style="float:left;width:5%;height: 1px;">
@@ -158,7 +208,7 @@
         <div id="right_card" style="float:left; width:15%;height: 1px;">
             <!-- 站位 -->
         </div>
-        <div  style="height: 12px;width: 100%;float: right;">
+        <div style="height: 12px;width: 100%;float: right;">
             <!-- 站位 -->
         </div>
     </div>
@@ -170,7 +220,7 @@
         使用信息收集于互联网，如有侵权请联系管理员，我们将第一时间删除并致歉 <br>
     </div>
     <!-- 以下为实验 -->
-  
+
     <!-- <blockquote class="toccolours"
         style="border-left-style:solid;border-left-width:8px;display:table;border-left-color: aqua; float:none;background-color: bisque;">
         <div style="padding: 10px 15px 10px 15px;">就是，给大家学一个内个就是,“水母”。<br>给大家模仿一下水母，这是我最近学的绝活<cite
@@ -179,8 +229,34 @@
     <!-- 以上为实验 -->
 </body>
 <script>
+        let slider = document.querySelector('.slider');
+        let images = document.querySelectorAll('.slider img');
+        let count = 1;
+        let prev = document.querySelector('.prev');
+        let next = document.querySelector('.next');
 
+        prev.addEventListener('click', () => {
+            count--;
+            if (count < 1) count = images.length;
+            slide();
+        });
 
+        next.addEventListener('click', () => {
+            count++;
+            if (count > images.length) count = 1;
+            slide();
+        });
+
+        function slide() {
+            images.forEach(img => img.style.left = '100%');
+            images[count - 1].style.left = 0;
+        }
+
+        setInterval(() => {
+            count++;
+            if (count > images.length) count = 1;
+            slide();
+        }, 1800);
 </script>
 
 </html>
