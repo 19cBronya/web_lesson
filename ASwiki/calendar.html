@@ -15,10 +15,6 @@
             background-position: center;
             /* height: 140px; */
         }
-        table.menu {
-            /* background-color: rgba(245, 245, 245, 0.5) */
-            /* background-color: rgba(0,255,255,0.8); */
-        }
 
         div.menu-item a {
             font-size: 30px;
@@ -55,6 +51,21 @@
             border-radius:40px;
             width: 90%;
         }
+
+        .slider {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: scale-down;
+        }
+
     </style>
 
 </head>
@@ -114,19 +125,27 @@
             </div>
             <div style="float:left;width:90%;">
                 <!-- mian_inner_box -->
-                <div style="width: 10%;float: left;background-color: rgba(0, 255, 255,0.1);">
-                    <img src="imgs/ava_pf.jpg" class="prf_pic">
-                    <img src="imgs/beela_pf.jpg" class="prf_pic">
-                    <img src="imgs/diana_pf.jpg" class="prf_pic">
-                    <img src="imgs/eileen_pf.jpg" class="prf_pic">
+                <div style="width: 10%;float: left;">
+                    <img id="sellect_ava" src="imgs/ava_pf.jpg" class="prf_pic">
+                    <img id="sellect_bella"  src="imgs/beela_pf.jpg" class="prf_pic">
+                    <img id="sellect_diana" src="imgs/diana_pf.jpg" class="prf_pic">
+                    <img id="sellect_eileen" src="imgs/eileen_pf.jpg" class="prf_pic">
+                    <img id="sellect_as" src="imgs/as_pf.jpg" class="prf_pic">
                     
                 </div>
 
-                <div style="width: 90%;float: right;height: 50px;background-color: rgba(0, 0, 0,0.1);">
-                    
+                <div style="width: 90%;float: right;">
+                    <div class="slider">
+                        <img src="imgs/calendar.jpg" alt="">
+                        <img src="imgs/calendar ava.jpg" alt="">
+                        <img src="imgs/calendar bella.jpg" alt="">
+                        <img src="imgs/calendar diana.jpg" alt="">
+                        <img src="imgs/calendar eillen.jpg" alt="">
+                    </div>
+                <div style="float: right;text-align: left;">
+                    <h5>tips:  点击成员头像可切换对应的个人日程</h5>
                 </div>
-
-            </div>
+                </div> </div>
             <div id="inner_left_card" style="float:left;width:5%;height: 1px;">
                 <!-- 站位 -->
             </div>
