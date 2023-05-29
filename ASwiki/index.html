@@ -170,8 +170,10 @@
                         <div style="float: left;">
                         </div>
                         <div style="float: left;">
-                            <img alt="Diana" src="imgs/we_r_diana.png" style="width: 95%;"><br>
-                            <img alt="AvA" src="imgs/we_r_ava.png" style="width: 95%;"><br>
+                            <img alt="Diana" src="imgs/we_r_diana.png" style="width: 95%;border-radius: 2vw;" 
+                            onmouseover="addShadow(this)" onmouseout="removeShadow(this)"><br>
+                            <img alt="AvA" src="imgs/we_r_ava.png" style="width: 95%;border-radius: 2vw;"
+                            onmouseover="addShadow(this)" onmouseout="removeShadow(this)"><br>
                         </div>
 
                     </div>
@@ -194,8 +196,10 @@
                             </div>
                     </div>
                     <div style="width: 15%;float: right;">
-                        <img alt="Bella" src="imgs/we_r_bella.png" style="width: 95%;"><br>
-                        <img alt="Eileen" src="imgs/we_r_eileen.png" style="width: 95%;">
+                        <img alt="Bella" src="imgs/we_r_bella.png" style="width: 95%;border-radius: 2vw;"
+                        onmouseover="addShadow(this)" onmouseout="removeShadow(this)"><br>
+                        <img alt="Eileen" src="imgs/we_r_eileen.png" style="width: 95%;border-radius: 2vw;"
+                        onmouseover="addShadow(this)" onmouseout="removeShadow(this)"><br>
                     </div>
 
                 </div>
@@ -250,7 +254,16 @@
         function slide() {
             images.forEach(img => img.style.left = '100%');
             images[count - 1].style.left = 0;
+            addShadow(images[count - 1]);
         }
+
+            function addShadow(img) {
+                img.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2)";
+            }
+
+            function removeShadow(img) {
+                img.style.boxShadow = "";
+            }
 
         setInterval(() => {
             count++;

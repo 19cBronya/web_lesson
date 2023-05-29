@@ -8,9 +8,9 @@
     <title>欢迎来到Asoul-wiki - 一个魂的百科全书！</title>
 
     <style>
-        div.head{
+        div.head {
             background-image: url(imgs/as4all_top.png);
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             /* height: 140px; */
@@ -32,29 +32,31 @@
             vertical-align: baseline;
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: .5rem;
-            width:20vw;
+            width: 20vw;
             /* width: 300px; */
         }
-        div.card_cir_showcir{
+
+        div.card_cir_showcir {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            border-radius: 6px; 
-            background-color:rgba(192, 192, 192,0.3)
+            border-radius: 6px;
+            background-color: rgba(192, 192, 192, 0.3)
         }
 
-        a.title{
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            color:antiquewhite;
+        a.title {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: antiquewhite;
             text-decoration: none;
-            text-align:left;
+            text-align: left;
         }
-        img.prf_pic{
-            border-radius:40px;
+
+        img.prf_pic {
+            border-radius: 40px;
             width: 90%;
         }
 
         .slider {
             width: 100%;
-            height: 200px;
+            height: 500px;
             overflow: hidden;
             position: relative;
         }
@@ -65,7 +67,6 @@
             position: absolute;
             object-fit: scale-down;
         }
-
     </style>
 
 </head>
@@ -75,9 +76,9 @@
     <div id="header" class="head">
 
         <div class="header">
-                <h1>
-                   <a class="title" href="index.html">A-SOUL wiki</a>
-                </h1>
+            <h1>
+                <a class="title" href="index.html">A-SOUL wiki</a>
+            </h1>
         </div>
         <div style="background-color: rgba(245, 245, 245, 0.5)">
             <center>
@@ -107,17 +108,16 @@
                 </table>
             </center>
         </div>
- 
+
     </div>
-    <div id="main_inner">    
-        <div  style="height: 5px;width: 100%;">
-               <!-- 站位 -->
-        </div>
-        <div id="left_card"style="float:left;width:15%;height: 1px;">
+    <div id="main_inner">
+        <div style="height: 5px;width: 100%;">
             <!-- 站位 -->
         </div>
-        <div id="mid_card" class="card_cir_showcir" 
-            style="float:left;width:70%;">
+        <div id="left_card" style="float:left;width:15%;height: 1px;">
+            <!-- 站位 -->
+        </div>
+        <div id="mid_card" class="card_cir_showcir" style="float:left;width:70%;">
             <!-- main_box -->
             <div style="height: 10px;"><!--站位--></div>
             <div id="inner_left_card" style="float:left;width:5%;height: 1px;">
@@ -126,12 +126,16 @@
             <div style="float:left;width:90%;">
                 <!-- mian_inner_box -->
                 <div style="width: 10%;float: left;">
-                    <img id="sellect_ava" src="imgs/ava_pf.jpg" class="prf_pic">
-                    <img id="sellect_bella"  src="imgs/beela_pf.jpg" class="prf_pic">
-                    <img id="sellect_diana" src="imgs/diana_pf.jpg" class="prf_pic">
-                    <img id="sellect_eileen" src="imgs/eileen_pf.jpg" class="prf_pic">
-                    <img id="sellect_as" src="imgs/as_pf.jpg" class="prf_pic">
-                    
+                    <img id="sellect_ava" src="imgs/ava_pf.jpg" class="prf_pic" onclick="show(2)"
+                        onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+                    <img id="sellect_bella" src="imgs/beela_pf.jpg" class="prf_pic" onclick="show(3)"
+                        onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+                    <img id="sellect_diana" src="imgs/diana_pf.jpg" class="prf_pic" onclick="show(4)"
+                        onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+                    <img id="sellect_eileen" src="imgs/eileen_pf.jpg" class="prf_pic" onclick="show(5)"
+                        onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+                    <img id="sellect_as" src="imgs/as_pf.jpg" class="prf_pic" onclick="show(1)"
+                        onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
                 </div>
 
                 <div style="width: 90%;float: right;">
@@ -142,10 +146,11 @@
                         <img src="imgs/calendar diana.jpg" alt="">
                         <img src="imgs/calendar eillen.jpg" alt="">
                     </div>
-                <div style="float: right;text-align: left;">
-                    <h5>tips:  点击成员头像可切换对应的个人日程</h5>
+                    <div style="float: right;text-align: left;">
+                        <h5>tips: 点击成员头像可切换对应的个人日程</h5>
+                    </div>
                 </div>
-                </div> </div>
+            </div>
             <div id="inner_left_card" style="float:left;width:5%;height: 1px;">
                 <!-- 站位 -->
             </div>
@@ -154,7 +159,7 @@
         <div id="right_card" style="float:left; width:15%;height: 1px;">
             <!-- 站位 -->
         </div>
-        <div  style="height: 12px;width: 100%;float: right;">
+        <div style="height: 12px;width: 100%;float: right;">
             <!-- 站位 -->
         </div>
     </div>
@@ -166,7 +171,7 @@
         使用信息收集于互联网，如有侵权请联系管理员，我们将第一时间删除并致歉 <br>
     </div>
     <!-- 以下为实验 -->
-  
+
     <!-- <blockquote class="toccolours"
         style="border-left-style:solid;border-left-width:8px;display:table;border-left-color: aqua; float:none;background-color: bisque;">
         <div style="padding: 10px 15px 10px 15px;">就是，给大家学一个内个就是,“水母”。<br>给大家模仿一下水母，这是我最近学的绝活<cite
@@ -175,7 +180,23 @@
     <!-- 以上为实验 -->
 </body>
 <script>
+    let slider = document.querySelector('.slider');
+    let images = document.querySelectorAll('.slider img');
+    let count = 1;
 
+    function show(x) {
+        images.forEach(img => img.style.left = '100%');
+        images[x - 1].style.left = 0;
+    }
+    function addShadow(img) {
+        img.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2)";
+    }
+
+    function removeShadow(img) {
+        img.style.boxShadow = "";
+    }
+
+    show(1);
 
 </script>
 
